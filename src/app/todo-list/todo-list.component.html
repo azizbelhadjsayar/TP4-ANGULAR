@@ -1,0 +1,23 @@
+<div class="container mt-4">
+    <h2 class="mb-3">Liste des Todos</h2>
+    <div *ngFor="let todo of todos" class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{ todo.title }}</h5>
+        <p class="card-text">{{ todo.description }}</p>
+        <small class="text-muted">Échéance : {{ todo.date }}</small>
+        <div class="mt-3">
+          <button class="btn btn-success btn-sm" (click)="markDone(todo)">
+            <i class="fa fa-check"></i>
+          </button>
+          <button class="btn btn-primary btn-sm" (click)="editTodo(todo)">
+            <i class="fa fa-pen"></i>
+          </button>
+          <button class="btn btn-danger btn-sm" (click)="deleteTodo(todo.id)">
+            <i class="fa fa-trash"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  

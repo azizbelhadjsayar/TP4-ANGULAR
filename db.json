@@ -1,0 +1,26 @@
+{
+  "todos": [
+    {
+      "id": "2",
+      "title": "Prepare presentation",
+      "done": true,
+      "date": "2024-12-05",
+      "description": "Slides for Angular workshop"
+    },
+    {
+      "id": "3",
+      "title": "asa",
+      "description": "asas",
+      "date": "2024-11-22",
+      "done": false
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "login": "user@example.com",
+      "password": "password123",
+      "token": "abc123"
+    }
+  ]
+}
